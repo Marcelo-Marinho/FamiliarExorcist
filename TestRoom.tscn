@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bra423qnstwdv"]
+
+[ext_resource type="Texture2D" uid="uid://cci86j2u0hylx" path="res://icon.svg" id="1_581vd"]
+[ext_resource type="PackedScene" uid="uid://bknb8mgeb17ii" path="res://Player/geminha.tscn" id="2_2e25m"]
+[ext_resource type="Texture2D" uid="uid://5ga4sucj5oaj" path="res://imgs/demon.png" id="3_3d3mt"]
+
+[node name="teste" type="Node2D"]
+
+[node name="caixa" type="Sprite2D" parent="."]
+position = Vector2(158, 89)
+texture = ExtResource("1_581vd")
+
+[node name="Geminha" parent="." instance=ExtResource("2_2e25m")]
+position = Vector2(23, 46)
+
+[node name="Demon" type="Sprite2D" parent="."]
+position = Vector2(63, 46)
+texture = ExtResource("3_3d3mt")
+flip_h = true
